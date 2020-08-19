@@ -16,6 +16,9 @@
 // console.log(getRow(firstRow, secondRow));
 
 function formattedPhone(phone) {
+	// const regexp = /(?<first>[0-9]{1})(?<second>[0-9]{3})(?<third>[0-9]{3})(?<fourth>[0-9]{2})(?<fifth>[0-9]{2})/g;
+	// return phone.replace(regexp, `$<first> ($<second>) $<third>-$<fourth>-$<fifth>`);
+	
 	let result = '';
 	Array.from(phone).forEach((ch, i) => {
 		switch (i) {
@@ -34,3 +37,4 @@ function formattedPhone(phone) {
 }
 
 console.log(formattedPhone('+71234567890'));
+
